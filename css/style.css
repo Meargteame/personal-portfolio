@@ -1,0 +1,125 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+
+a{
+    color: var(--magenta);
+}
+a:hover{
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+/* intro styles */
+
+#intro{
+    padding-bottom:10rem ;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+#intro .name {
+    font-family: var(--mono);
+    font-size: 1rem;
+    
+
+}
+
+#intro span{
+    font-family: var(--sans);
+    color: var(--aqua);
+    font-size: 4rem;
+    display: block;
+    font-weight: 300;
+}
+
+#intro h2{
+    font-size: 4rem;
+}
+
+
+/* styling the contact section   */
+
+#contact {
+    background-color: var(--plum);
+}
+
+.contact{
+    text-align: center;
+    padding: 3rem 0;
+    line-height: 1.5;
+    width: 400px;
+    margin: 0 auto;
+
+}
+#contact p:last-child{
+    margin-top: 3rem;
+}
+
+
+
+nav{
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1 rem;
+}
+
+nav  ul li a h1 {
+    font-family: var(--sans);
+}
+
+nav ul{
+    list-style-type:none ;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* styling nav links */
+
+nav a{
+    
+}
